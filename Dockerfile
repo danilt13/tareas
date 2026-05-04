@@ -1,13 +1,18 @@
 FROM php:8.2-apache
 
+# Instalar extensión MySQL
 RUN docker-php-ext-install mysqli
 
-# Limpiar configuración de MPMs
-RUN rm -f /etc/apache2/mods-enabled/mpm_*.load
+# Desactivar TODOS los MPM primero (bien hecho)
+RUN a2dismod mpm_event mpm_worker mpm_prefork || true
 
-# Habilitar solo prefork
+# Activar solo prefork
 RUN a2enmod mpm_prefork rewrite
 
+# Copiar archivos
 COPY . /var/www/html/
+
+# Permisos (recomendado)
+RUN chown -R www-data:www-data /var/www/html
 
 EXPOSE 80
