@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f2f5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.btn-nueva {
+    display: inline-block;
+    background: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.filtros {
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.filtros a {
+    text-decoration: none;
+    padding: 5px 15px;
+    background: #ecf0f1;
+    color: #2c3e50;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.tabla-tareas {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-tareas th,
+.tabla-tareas td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.fila-completada {
+    background: #e8f5e9;
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.btn-estado {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background: #3498db;
+    color: white;
+}
+
+.btn-editar {
+    color: #f39c12;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.btn-eliminar {
+    color: #e74c3c;
+    text-decoration: none;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.campo input,
+.campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.botones {
+    margin-top: 20px;
+}
+
+.btn-guardar {
+    background: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-cancelar {
+    background: #95a5a6;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-left: 10px;
+}
+
+.detalle-tarea {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.detalle-tarea p {
+    margin: 10px 0;
+}
+
+.descripcion {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+.botones-detalle {
+    margin-top: 20px;
+}
+
+.btn-volver {
+    background: #6c757d;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-left: 10px;
+}
+
+.btn-ver {
+    color: #3498db;
+    text-decoration: none;
+    margin-right: 10px;
+}
