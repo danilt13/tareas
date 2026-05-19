@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <title>Tengo tareas pendientes</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div class="container">
         <h1>Mis tareas</h1>
-        
+        <p class="descripcion"> Organiza tus actividades pendientes y lleva control de tus tareas diarias. </p>
+
         <a href="crear.php" class="btn-nueva">+ tarea</a>
         
         <div class="filtros">
@@ -53,6 +55,23 @@
                 <?php endwhile; ?>
             </tbody>
         </table>
+
+        <div class="recursos">
+        <h3>Recursos útiles</h3>
+
+         <a href="https://calendar.google.com/" target="_blank">
+          Google Calendar
+         </a>
+
+         <a href="https://trello.com/" target="_blank">
+         Trello
+         </a>
+
+         <a href="https://www.notion.so/" target="_blank">
+         Notion
+         </a>
+        </div>
+
     </div>
 </body>
 </html>

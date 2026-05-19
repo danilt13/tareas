@@ -162,3 +162,24 @@ h1 {
     text-decoration: none;
     margin-right: 10px;
 }
+
+@media (max-width: 768px) {
+
+    .tabla-tareas {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .acciones a {
+        display: block;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .filtros {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
