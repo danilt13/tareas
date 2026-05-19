@@ -1,13 +1,16 @@
 FROM php:8.2-apache
 
-# Instalar extensiones de MySQL
-RUN docker-php-ext-install mysqli pdo pdo_mysql
+# Instalar drivers necesarios
+RUN apt-get update && apt-get install -y libpq-dev
 
-# Habilitar mod_rewrite de Apache (opcional, para URLs amigables)
+# Instalar extensiones PHP
+RUN docker-php-ext-install pdo pdo_mysql pdo_pgsql mysqli
+
+# Activar rewrite
 RUN a2enmod rewrite
 
-# Copiar todos los archivos del proyecto al servidor
 COPY . /var/www/html/
 
-# Exponer el puerto 80
+RUN chown -R www-data:www-data /var/www/html
+
 EXPOSE 80
