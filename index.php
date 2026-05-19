@@ -10,7 +10,6 @@
 <body>
     <div class="container">
         <h1>Mis tareas</h1>
-        <p class="descripcion"> Organiza tus actividades pendientes y lleva control de tus tareas diarias. </p>
 
         <a href="crear.php" class="btn-nueva">+ tarea</a>
         
@@ -57,20 +56,14 @@
         </table>
 
         <div class="recursos">
-        <h3>Recursos útiles</h3>
+    <h3>Recursos útiles</h3>
 
-         <a href="https://calendar.google.com/" target="_blank">
-          Google Calendar
-         </a>
-
-         <a href="https://trello.com/" target="_blank">
-         Trello
-         </a>
-
-         <a href="https://www.notion.so/" target="_blank">
-         Notion
-         </a>
-        </div>
+    <div class="recursos-grid">
+        <a href="https://calendar.google.com/" target="_blank">Google Calendar</a>
+        <a href="https://trello.com/" target="_blank">Trello</a>
+        <a href="https://www.notion.so/" target="_blank">Notion</a>
+    </div>
+    </div>
 
     </div>
 </body>
